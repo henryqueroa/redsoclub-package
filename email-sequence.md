@@ -83,13 +83,15 @@ Hola Diego y María,
 
 Algo concreto del Ad Library que pueden usar esta semana, trabajen conmigo o no.
 
-De sus 5 videos activos, el más fuerte es el 1256002109797023 (lanzado 20 feb):
+De sus 5 videos activos, el más fuerte es el 1256002109797023 (lanzado 20 feb). Copy completo:
 
-> "Te esfuerzas grabando… Editas perfecto… Y cuando lo subes se ve pixelado. No es tu cámara. Es Instagra…"
+> "Te esfuerzas grabando… Editas perfecto… Y cuando lo subes se ve pixelado. No es tu cámara. Es Instagram y tus configuraciones."
 
-Eso es un hook de oro. Tiene 4 cosas: problema tangible y específico, secuencia (esfuerzas → editas → resultado), reframe del culpable, y un cliffhanger ("Es Instagra…"). Lo recomendable es producir 5 a 8 variantes con la misma fórmula sobre otros problemas técnicos puntuales: por qué tu video pierde audio, por qué Instagram baja el alcance al 3er post, por qué tu thumbnail no aparece bien, etc.
+Y el video remata con tutorial de 58 segundos: 4K @ 30fps, HDR off, Media Quality en upload to highest quality. Eso es un hook de oro. Tiene 4 cosas: problema tangible y específico, secuencia (esfuerzas, editas, resultado), reframe del culpable y solución concreta en menos de un minuto.
 
-Lo que tienen activo de febrero ya cumplió su ciclo. La estructura del Ad 5 funciona, repítanla.
+La estructura es replicable. Pueden producir 5 a 8 variantes con la misma fórmula sobre otros problemas técnicos puntuales: por qué tu video pierde audio al subirlo, por qué Instagram baja el alcance al 3er post, por qué tu thumbnail no aparece bien, etc.
+
+Lo que tienen activo de febrero ya cumplió su ciclo. La estructura del Ad 5 funciona. Replíquenla con nuevos problemas.
 
 Cualquier cosa, aquí estoy.
 

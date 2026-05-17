@@ -33,19 +33,21 @@ Zytrom
 
 ## Email 2: Insight Expansion (Día 3)
 
-**Asunto:** Una cosa que noté en RedsoClub
+**Asunto:** 5 de tus ads llevan 91 días corriendo
 
 Hola Diego, hola María,
 
-Algo específico que vi en el sitio y no quise dejar pasar:
+Antes de mandarles esto me metí al Meta Ad Library de Redso Club. Vi 8 ads activos. Cinco de ellos (Library IDs 799161875821603, 3703164189825163, 945598524816845, 1425298645721936, 1256002109797023) los lanzaron entre el 16 y el 20 de febrero. Hoy es 17 de mayo. Eso son 87 a 91 días corriendo sin refresh.
 
-El webinar de adquisición tiene una fecha fija ("Miércoles 18 de Febrero, 6 PM Miami"). Quien aterriza ahí un martes cualquiera ve un CTA muerto o tiene que esperar. Sin un evergreen activo, eso es 5 a 6 días por semana de tráfico desperdiciado.
+A esta altura del ciclo, la frecuencia ya está alta, el CTR cayó y el CPM lleva semanas creciendo silenciosamente. La factura no avisa, solo se infla.
 
-Si lo evergreen-izan con replay automatizado y countdown rotativo, mi estimación conservadora es 30 a 50% más conversión mensual sin tocar el spend en ads. Adentro de la hub page que les mandé está explicado con detalle:
+Refrescaron 2 estáticas el 24 abr y 1 más el 15 may. Eso ayudó pero no compensa 5 piezas viejas activas en paralelo.
+
+Lo otro que noté: 7 de los 8 ads botan al home de redsoclub.com. Solo el Ad 4 (1425298645721936) tiene landing dedicada (`/landing-06-27-2025`). Cada ad merece su landing congruente con el ángulo. Eso solo ya levanta la conversión post-click 20 a 40%.
+
+Está todo documentado en la hub que les mandé:
 
 [HUB_URL]
-
-Cualquier cosa, aquí estoy.
 
 Saludos,
 Henry
@@ -75,17 +77,21 @@ Henry
 
 ## Email 4: Additional Value (Día 8)
 
-**Asunto:** Táctica rápida para creadores
+**Asunto:** Su hook ganador y cuál replicar
 
 Hola Diego y María,
 
-Algo que pueden aplicar esta semana, trabajen conmigo o no:
+Algo concreto del Ad Library que pueden usar esta semana, trabajen conmigo o no.
 
-Cada vez que María postea un Reel viral, hay un pico de tráfico orgánico que se va sin ser capturado. Si en la bio rotan un link tipo "clase gratis del Reel que viste" hacia un opt-in temático (no a la home), la tasa de captura sube 3 a 5x porque el contexto está caliente.
+De sus 5 videos activos, el más fuerte es el 1256002109797023 (lanzado 20 feb):
 
-Funciona mejor todavía si la clase gratis cambia cada 2 a 3 semanas para mantener relevancia con los Reels más recientes.
+> "Te esfuerzas grabando… Editas perfecto… Y cuando lo subes se ve pixelado. No es tu cámara. Es Instagra…"
 
-Pequeña cosa. Implementable en 1 día.
+Eso es un hook de oro. Tiene 4 cosas: problema tangible y específico, secuencia (esfuerzas → editas → resultado), reframe del culpable, y un cliffhanger ("Es Instagra…"). Lo recomendable es producir 5 a 8 variantes con la misma fórmula sobre otros problemas técnicos puntuales: por qué tu video pierde audio, por qué Instagram baja el alcance al 3er post, por qué tu thumbnail no aparece bien, etc.
+
+Lo que tienen activo de febrero ya cumplió su ciclo. La estructura del Ad 5 funciona, repítanla.
+
+Cualquier cosa, aquí estoy.
 
 Saludos,
 Henry

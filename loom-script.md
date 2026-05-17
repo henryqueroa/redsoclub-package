@@ -8,7 +8,7 @@
 
 **[Cámara on, hub page abierta en segunda pantalla]**
 
-"Hola Diego, hola María. Soy Henry de Zytrom. Antes de que cierres esto, quiero que sepas que esto no es un pitch genérico. Pasé el día entero adentro de RedsoClub.com y construí algo específicamente para ustedes. Te lo enseño en 2 minutos."
+"Hola Diego, hola María. Soy Henry de Zytrom. Antes de que cierres esto, quiero que sepas que esto no es un pitch genérico. Me metí al Meta Ad Library de Redso Club y al sitio, y construí esto específicamente para ustedes. Te lo enseño en 2 minutos."
 
 ---
 
@@ -16,19 +16,19 @@
 
 **[Compartir pantalla, hacer scroll por la hub page]**
 
-"Esto que ves aquí es una página que armé solo para RedsoClub. Adentro hay 5 cosas:"
+"Esto que ves aquí es una página que armé solo para RedsoClub. Adentro hay 5 cosas."
 
 **[Click en accordion "Research Snapshot"]**
 
-"Lo primero es la investigación. Revisé el sitio, los testimonios de Veronica, Claudia, Andreina, los webinars, todo. De ahí saqué 5 puntos específicos donde creo que están dejando dinero sobre la mesa. Te menciono uno: el webinar de adquisición está atado a una fecha fija. Quien llega un martes no convierte. Si lo evergreen-izamos, ganan tres dígitos de leads al mes sin gastar más en tráfico."
+"Lo primero es la investigación. Vi sus 8 ads activos en el Library. Cinco de ellos llevan entre 87 y 91 días corriendo, los de febrero. Eso es fatiga creativa fuerte. La factura no avisa, solo se infla mes a mes con CPM y frecuencia. Y otro dato: 7 de esos 8 ads botan al home. Solo el Ad 4 tiene landing dedicada en `/landing-06-27-2025`. Cada ángulo merece su landing. Es de los gaps más rápidos de cerrar."
 
 **[Scroll a "Campaign Angles" + "Ad Scripts"]**
 
-"Después te dejo 5 ángulos de campaña y 3 guiones de ad listos para grabar. Todo en español, en la voz que ya tienen ustedes, usando los nombres reales de las testimoniales. Cero relleno."
+"Después te dejo 5 ángulos de campaña y 3 guiones de ad listos para grabar. Todo en español, en la voz que ya tienen ustedes, alineado a los hooks que sé que les funcionan, como el del video pixelado."
 
 **[Scroll a "Landing Page Preview"]**
 
-"Y arriba ves esta otra página. Esa es una landing page completa que te construí, totalmente funcional, lista para usar. Cumple con el estilo de RedsoClub: blanco, turquesa, mismo tono. Si la quieren probar contra la que tienen hoy, está ahí."
+"Y arriba ves esta otra página. Esa es una landing completa que te construí, totalmente funcional. Cumple con el estilo de RedsoClub. Si la quieren probar como segunda landing para uno de los ángulos, está ahí lista."
 
 **[Scroll a "VSL Outline"]**
 
@@ -44,7 +44,7 @@
 
 "Si en algún punto quieres que conversemos 20 minutos para ver cómo se ve atacar esos gaps en serio, debajo del video te dejo mi calendario. Sin presión. Si no, igual, espero que algo de esto les sirva."
 
-"Suerte con el próximo live del domingo. Nos vemos."
+"Nos vemos."
 
 **[End]**
 

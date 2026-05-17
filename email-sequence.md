@@ -15,7 +15,7 @@
 
 Hola Diego y María,
 
-Soy Henry de Zytrom. Pasé el día entero adentro de RedsoClub.com revisando la oferta, los testimonios, la página de membresía y el flow de webinar. Después construí esto solo para ustedes:
+Soy Henryque de Zytrom. Pasé el día entero adentro de RedsoClub.com revisando la oferta, los testimonios, la página de membresía y el flow de webinar. Después construí esto solo para ustedes:
 
 [HUB_URL]
 
@@ -26,7 +26,7 @@ No hay pitch ni formulario. Es de ustedes, lo usen o no.
 Si algo de eso les sirve, me alegra.
 
 Saludos,
-Henry
+Henryque Roa
 Zytrom
 
 ---
@@ -50,7 +50,7 @@ Está todo documentado en la hub que les mandé:
 [HUB_URL]
 
 Saludos,
-Henry
+Henryque Roa
 
 ---
 
@@ -71,7 +71,7 @@ En RedsoClub la diferencia entre $24.95 mensual y $239.52 anual es $59. Es la mi
 Si quieres que aterricemos cómo se vería ese cambio en su checkout, me dices.
 
 Saludos,
-Henry
+Henryque Roa
 
 ---
 
@@ -96,7 +96,7 @@ Lo que tienen activo de febrero ya cumplió su ciclo. La estructura del Ad 5 fun
 Cualquier cosa, aquí estoy.
 
 Saludos,
-Henry
+Henryque Roa
 
 ---
 
@@ -116,7 +116,7 @@ https://calendly.com/henryque-zytrom/30min
 Si prefieren responder por aquí qué slot les sirve, también funciona.
 
 Saludos,
-Henry
+Henryque Roa
 
 ---
 
@@ -136,7 +136,7 @@ Si quieres lo aterrizamos en la llamada:
 https://calendly.com/henryque-zytrom/30min
 
 Saludos,
-Henry
+Henryque Roa
 
 ---
 
@@ -156,7 +156,7 @@ Si te interesa que veamos cómo se aterriza:
 https://calendly.com/henryque-zytrom/30min
 
 Saludos,
-Henry
+Henryque Roa
 
 ---
 
@@ -174,7 +174,7 @@ Solo por si no llegó:
 
 Si está abajo de prioridad ahora, sin problema. Cuando tenga sentido, ahí está.
 
-Henry
+Henryque Roa
 
 ---
 
@@ -193,7 +193,7 @@ https://calendly.com/henryque-zytrom/30min
 
 Suerte con el próximo lanzamiento.
 
-Henry
+Henryque Roa
 Zytrom
 
 ---
@@ -214,5 +214,5 @@ Mientras tanto, gracias por construir RedsoClub. Lo que están haciendo por la c
 
 Suerte y nos cruzamos cuando toque.
 
-Henry
+Henryque Roa
 Zytrom

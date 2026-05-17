@@ -8,7 +8,7 @@
 
 **[Cámara on, hub page abierta en segunda pantalla]**
 
-"Hola Diego, hola María. Soy Henry de Zytrom. Antes de que cierres esto, quiero que sepas que esto no es un pitch genérico. Me metí al Meta Ad Library de Redso Club y al sitio, y construí esto específicamente para ustedes. Te lo enseño en 2 minutos."
+"Hola Diego, hola María. Soy Henryque de Zytrom. Antes de que cierres esto, quiero que sepas que esto no es un pitch genérico. Me metí al Meta Ad Library de Redso Club y al sitio, y construí esto específicamente para ustedes. Te lo enseño en 2 minutos."
 
 ---
 

@@ -36,47 +36,40 @@
   .reveal.in{opacity:1;transform:translateY(0)}
 
   /* Navbar */
-  nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:100;padding:16px 0}
+  nav{position:sticky;top:0;background:rgba(255,255,255,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--border);z-index:100;padding:12px 0}
   .nav-inner{display:flex;align-items:center;justify-content:space-between;gap:24px}
-  .nav-logo img{height:44px;width:auto}
-  .nav-cta{padding:12px 22px;font-size:13px}
+  .nav-logo img{height:40px;width:auto}
+  .nav-cta{padding:10px 20px;font-size:13px}
 
-  /* Hero */
-  .hero{padding:80px 0 100px;background:linear-gradient(180deg,#fff 0%,#F4F7F9 100%)}
-  .hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
-  .hero h1{font-size:56px;line-height:1.1;font-weight:800;letter-spacing:-.02em;margin-bottom:24px}
+  /* Hero VSL (above-the-fold: nav + hero + video + CTA) */
+  .hero{padding:18px 0 32px;background:linear-gradient(180deg,#fff 0%,#F4F7F9 100%);text-align:center}
+  .hero .eyebrow-pill{display:inline-flex;align-items:center;gap:8px;background:rgba(20,184,196,.10);color:var(--accent-dark);font-size:11px;font-weight:700;text-transform:uppercase;letter-spacing:1.1px;padding:5px 12px;border-radius:999px;border:1px solid rgba(20,184,196,.22);margin-bottom:10px}
+  .hero .eyebrow-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(20,184,196,.18)}
+  .hero h1{font-size:clamp(26px,3.4vw,38px);line-height:1.14;font-weight:800;letter-spacing:-.02em;max-width:860px;margin:0 auto 8px}
   .hero h1 span{color:var(--accent)}
-  .hero p.lead{font-size:20px;color:var(--muted);margin-bottom:32px;max-width:540px}
-  .hero-stats{display:flex;gap:32px;margin-top:40px;flex-wrap:wrap}
-  .hero-stat{padding-left:16px;border-left:3px solid var(--accent)}
-  .hero-stat .n{font-size:28px;font-weight:800;color:var(--text);display:block}
-  .hero-stat .l{font-size:13px;color:var(--muted);text-transform:uppercase;letter-spacing:.5px;margin-top:4px}
-  .hero-img-wrap{position:relative}
-  .hero-img-wrap img{border-radius:16px;box-shadow:var(--shadow-lg)}
-  .hero-badge{position:absolute;bottom:-20px;left:-20px;background:#fff;padding:16px 20px;border-radius:12px;box-shadow:var(--shadow);display:flex;align-items:center;gap:12px;font-weight:600;font-size:14px}
-  .hero-badge .dot{width:10px;height:10px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 4px rgba(20,184,196,.18)}
+  .hero p.sub{font-size:clamp(14px,1.2vw,15px);color:var(--muted);max-width:620px;margin:0 auto 10px;line-height:1.5}
+  .trust-row{display:flex;gap:14px;justify-content:center;flex-wrap:wrap;color:var(--muted);font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.5px;margin-bottom:14px}
+  .trust-row span{display:inline-flex;align-items:center;gap:6px}
+  .trust-row span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block}
+
+  /* VSL placeholder */
+  .vsl-wrap{max-width:760px;margin:0 auto}
+  .vsl-frame{position:relative;aspect-ratio:16/9;width:100%;background:linear-gradient(135deg,#0A1929 0%,#0A6E7C 100%);border:1px solid var(--border);border-radius:16px;box-shadow:0 24px 60px rgba(20,184,196,.22);overflow:hidden;cursor:pointer;display:flex;align-items:center;justify-content:center}
+  .vsl-frame:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(20,184,196,.20), transparent 60%)}
+  .vsl-play{position:relative;width:84px;height:84px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.35);transition:transform .2s ease}
+  .vsl-frame:hover .vsl-play{transform:scale(1.06)}
+  .vsl-play:after{content:"";display:block;width:0;height:0;border-left:22px solid var(--accent);border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
+  .vsl-label{margin-top:10px;font-size:13px;color:var(--muted);font-weight:500}
+  .vsl-label strong{color:var(--text);font-weight:700}
+  .hero .vsl-cta{margin-top:18px}
+  .hero .vsl-cta .btn{font-size:16px;padding:16px 34px}
+  .hero .vsl-cta .micro{display:block;margin-top:8px;font-size:12px;color:var(--muted);letter-spacing:.4px}
 
   /* Section base */
-  section{padding:96px 0}
+  section{padding:88px 0}
   .eyebrow{font-size:13px;font-weight:700;color:var(--accent);text-transform:uppercase;letter-spacing:1.2px;margin-bottom:16px}
   h2.section-title{font-size:42px;line-height:1.15;font-weight:800;letter-spacing:-.01em;margin-bottom:20px;max-width:760px}
   .section-lead{font-size:18px;color:var(--muted);max-width:680px;margin-bottom:56px}
-
-  /* Problem */
-  .problem{background:var(--surface)}
-  .problem-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:32px;margin-top:48px}
-  .pain-card{background:#fff;padding:32px;border-radius:12px;border:1px solid var(--border)}
-  .pain-card h3{font-size:18px;font-weight:700;margin-bottom:12px;color:var(--text)}
-  .pain-card p{color:var(--muted);font-size:15px}
-  .pain-num{display:inline-block;width:36px;height:36px;border-radius:50%;background:rgba(20,184,196,.12);color:var(--accent);font-weight:700;display:flex;align-items:center;justify-content:center;margin-bottom:16px}
-
-  /* Solution */
-  .solution-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:64px;align-items:center}
-  .journey-list{margin-top:32px;display:flex;flex-direction:column;gap:20px}
-  .journey-step{display:flex;gap:20px;align-items:flex-start;padding:20px;border-radius:12px;background:var(--surface);border-left:4px solid var(--accent)}
-  .journey-step .step-n{flex-shrink:0;width:40px;height:40px;border-radius:8px;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:800}
-  .journey-step h4{font-size:16px;font-weight:700;margin-bottom:6px}
-  .journey-step p{font-size:14px;color:var(--muted)}
 
   /* Testimonials */
   .testimonials{background:linear-gradient(180deg,#fff 0%,#F4F7F9 100%)}
@@ -88,17 +81,6 @@
   .test-name{font-weight:700;font-size:15px}
   .test-handle{color:var(--accent);font-size:13px}
   .test-result{display:inline-block;margin-top:12px;padding:6px 12px;border-radius:6px;background:rgba(20,184,196,.12);color:var(--accent-dark);font-size:12px;font-weight:700;text-transform:uppercase;letter-spacing:.4px}
-
-  /* Lead magnet */
-  .lead-magnet{background:linear-gradient(135deg,var(--accent) 0%,var(--accent-dark) 100%);color:#fff;border-radius:24px;padding:72px 56px;margin:0 24px;max-width:1180px;text-align:center}
-  .lead-magnet-wrap{max-width:1180px;margin:0 auto;padding:0 24px}
-  .lead-magnet .eyebrow{color:rgba(255,255,255,.85)}
-  .lead-magnet h2{font-size:40px;font-weight:800;margin-bottom:16px}
-  .lead-magnet p{font-size:18px;opacity:.92;max-width:580px;margin:0 auto 32px}
-  .lead-form{display:flex;gap:12px;justify-content:center;max-width:520px;margin:0 auto;flex-wrap:wrap}
-  .lead-form input{flex:1;min-width:180px;padding:16px 20px;border-radius:8px;border:none;font-size:15px;font-family:inherit}
-  .lead-form button{padding:16px 28px;background:#fff;color:var(--accent-dark);border:none;border-radius:8px;font-weight:700;text-transform:uppercase;letter-spacing:.5px;font-size:14px;cursor:pointer;transition:all .2s ease}
-  .lead-form button:hover{transform:translateY(-1px);box-shadow:0 12px 24px rgba(0,0,0,.18)}
 
   /* Pricing */
   .pricing{background:var(--surface)}
@@ -138,24 +120,32 @@
   .faq-q .icon{flex-shrink:0;width:32px;height:32px;border-radius:50%;background:var(--surface);color:var(--accent);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:20px;transition:transform .3s ease}
   .faq-item.open .faq-q .icon{transform:rotate(45deg)}
   .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease;padding:0 28px}
-  .faq-item.open .faq-a{max-height:300px;padding:0 28px 24px}
+  .faq-item.open .faq-a{max-height:320px;padding:0 28px 24px}
   .faq-a p{color:var(--muted);font-size:15px;line-height:1.6}
 
   /* Footer */
-  footer{background:#fff;border-top:1px solid var(--border);padding:48px 0;text-align:center;color:var(--muted);font-size:14px}
+  footer{background:#fff;border-top:1px solid var(--border);padding:40px 0;text-align:center;color:var(--muted);font-size:14px}
 
   /* Mobile */
   @media (max-width:880px){
-    .hero{padding:56px 0 72px}
-    .hero-grid,.solution-grid,.authority-grid{grid-template-columns:1fr;gap:40px}
-    .hero h1{font-size:38px}
-    section{padding:64px 0}
-    h2.section-title{font-size:30px}
-    .problem-grid,.test-grid,.pricing-grid{grid-template-columns:1fr}
-    .lead-magnet{padding:48px 28px}
-    .lead-magnet h2{font-size:28px}
-    .final-cta h2{font-size:32px}
+    .hero{padding:20px 0 32px}
+    .hero h1{font-size:28px}
+    .hero p.sub{font-size:15px}
+    .trust-row{gap:12px;font-size:11px}
+    .vsl-play{width:64px;height:64px}
+    .vsl-play:after{border-left-width:16px;border-top-width:10px;border-bottom-width:10px;margin-left:5px}
+    section{padding:56px 0}
+    h2.section-title{font-size:28px}
+    .test-grid,.pricing-grid{grid-template-columns:1fr}
+    .authority-grid{grid-template-columns:1fr;gap:36px}
+    .final-cta h2{font-size:30px}
     .authority-stats{grid-template-columns:1fr 1fr 1fr}
+  }
+  @media (max-width:520px){
+    .hero h1{font-size:24px}
+    .nav-logo img{height:32px}
+    .nav-cta{padding:8px 14px;font-size:12px}
+    .trust-row span{font-size:10px}
   }
 </style>
 </head>
@@ -169,67 +159,30 @@
 </nav>
 
 <header id="top" class="hero">
-  <div class="container hero-grid">
-    <div class="reveal">
-      <p class="eyebrow">Aprende → Crece → Monetiza</p>
-      <h1>Conviértete en un <span>creador a tiempo completo</span> este 2026</h1>
-      <p class="lead">El plan estructurado paso a paso que ya transformó a miles de creadoras hispanohablantes. Cursos, lives, comunidad y monetización real.</p>
-      <a href="#pricing" class="btn">Quiero entrar al Club</a>
-      <div class="hero-stats">
-        <div class="hero-stat"><span class="n">Miles</span><span class="l">Creadoras activas</span></div>
-        <div class="hero-stat"><span class="n">200+</span><span class="l">Cursos on-demand</span></div>
-        <div class="hero-stat"><span class="n">Lives</span><span class="l">Todos los domingos</span></div>
-      </div>
+  <div class="container">
+    <span class="eyebrow-pill"><span class="dot"></span> Próximo live este domingo</span>
+    <h1>Llevas años creando y aún no logras <span>vivir de tus redes</span>. No es el algoritmo.</h1>
+    <p class="sub">Mira este video corto. Te explicamos qué cambia cuando tienes un plan semanal estructurado, y cómo miles de creadoras hispanohablantes ya viven al 100% de su contenido.</p>
+    <div class="trust-row">
+      <span>0 a 193k IG</span>
+      <span>10k a 185k IG</span>
+      <span>200+ cursos on-demand</span>
     </div>
-    <div class="hero-img-wrap reveal">
-      <img src="https://assets.cdn.filesafe.space/8uwwaVkrrg7uM7RuXE4l/media/697ce08d1311f6636bf1ded4.jpg" alt="Creadoras de RedsoClub">
-      <div class="hero-badge"><span class="dot"></span> Próximo live este domingo</div>
+
+    <!-- TODO: reemplazar este div por <iframe> Wistia/YouTube cuando el video esté listo. Conservar aspect-ratio 16/9 y max-width 760px. -->
+    <div class="vsl-wrap reveal">
+      <div class="vsl-frame" role="button" aria-label="Reproducir video">
+        <div class="vsl-play" aria-hidden="true"></div>
+      </div>
+      <p class="vsl-label">Mira este video antes de unirte al club <strong>(4 a 8 min)</strong></p>
+    </div>
+
+    <div class="vsl-cta">
+      <a href="#pricing" class="btn">Quiero entrar al Club</a>
+      <span class="micro">Cancela cuando quieras. Empieza esta semana.</span>
     </div>
   </div>
 </header>
-
-<section class="problem">
-  <div class="container">
-    <p class="eyebrow reveal">Por qué llevas años atascada</p>
-    <h2 class="section-title reveal">El algoritmo no es tu problema. Tu falta de plan sí.</h2>
-    <p class="section-lead reveal">Postear sin sistema es la razón número uno por la que creadoras talentosas se quedan estancadas. No falta motivación. Falta estructura semanal.</p>
-    <div class="problem-grid">
-      <div class="pain-card reveal">
-        <span class="pain-num">1</span>
-        <h3>Empiezas la semana sin saber qué publicar</h3>
-        <p>Cada lunes improvisas. El algoritmo premia consistencia con dirección, no volumen sin rumbo.</p>
-      </div>
-      <div class="pain-card reveal">
-        <span class="pain-num">2</span>
-        <h3>Tienes seguidores pero ninguna marca te paga</h3>
-        <p>No es tu número de followers. Es que nadie te enseñó a hacer pitch ni qué cobrar.</p>
-      </div>
-      <div class="pain-card reveal">
-        <span class="pain-num">3</span>
-        <h3>Creas sola, sin comunidad real</h3>
-        <p>Crear contenido en silencio agota. Necesitas creadoras alrededor que entiendan el camino.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container solution-grid">
-    <div class="reveal">
-      <img src="https://assets.cdn.filesafe.space/8uwwaVkrrg7uM7RuXE4l/media/64b7137af601aa326a469ae4.png" alt="RedsoClub Journey" style="border-radius:16px;box-shadow:var(--shadow-lg)">
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">El RedsoClub Journey</p>
-      <h2 class="section-title">Un camino con orden. No otra biblioteca de cursos.</h2>
-      <p class="section-lead">Te decimos qué publicar el lunes, qué grabar el martes, cómo armar tu primer pitch a una marca el viernes. Plan semanal estructurado para Instagram, TikTok y YouTube.</p>
-      <div class="journey-list">
-        <div class="journey-step"><div class="step-n">1</div><div><h4>Aprende</h4><p>200+ cursos on-demand cubriendo crecimiento, copy, edición, monetización y estrategia.</p></div></div>
-        <div class="journey-step"><div class="step-n">2</div><div><h4>Crece</h4><p>Plan semanal claro y lives todos los domingos con María, Diego y guest instructors.</p></div></div>
-        <div class="journey-step"><div class="step-n">3</div><div><h4>Monetiza</h4><p>1 a 1 con Student Success Managers, plantillas de pitch a marcas y acceso a colaboraciones.</p></div></div>
-      </div>
-    </div>
-  </div>
-</section>
 
 <section class="testimonials">
   <div class="container">
@@ -239,7 +192,7 @@
     <div class="test-grid">
       <div class="test-card reveal">
         <p class="test-quote">"Empecé con 0 seguidores y logré crecer a 193,000 en Instagram y a 219k en TikTok."</p>
-        <span class="test-result">0 → 193k IG</span>
+        <span class="test-result">0 a 193k IG</span>
         <div class="test-meta">
           <div class="test-avatar">V</div>
           <div><div class="test-name">Veronica Dominguez</div><div class="test-handle">@Veritomom</div></div>
@@ -247,7 +200,7 @@
       </div>
       <div class="test-card reveal">
         <p class="test-quote">"Durante 3 años subí contenido. Empecé en mayo con 10,000 seguidores y ahora tengo una comunidad de más de 185,000."</p>
-        <span class="test-result">10k → 185k</span>
+        <span class="test-result">10k a 185k</span>
         <div class="test-meta">
           <div class="test-avatar">M</div>
           <div><div class="test-name">Maria Arteaga</div><div class="test-handle">@dramelyfit</div></div>
@@ -255,7 +208,7 @@
       </div>
       <div class="test-card reveal">
         <p class="test-quote">"Estaba trabajando 11 horas al día. Hoy tengo más de 608,000 seguidores en Instagram y más de 95,000 en TikTok."</p>
-        <span class="test-result">11h job → 608k IG</span>
+        <span class="test-result">11h al día a 608k IG</span>
         <div class="test-meta">
           <div class="test-avatar">C</div>
           <div><div class="test-name">Claudia Gonzalez</div><div class="test-handle">@englishbyclau</div></div>
@@ -273,17 +226,20 @@
   </div>
 </section>
 
-<section style="padding:48px 0">
-  <div class="lead-magnet-wrap">
-    <div class="lead-magnet reveal">
-      <p class="eyebrow">Clase gratis</p>
-      <h2>Cómo crecer y monetizar tus redes en 2026</h2>
-      <p>Webinar gratuito con María Valeria y Diego. Aprende el sistema que ya usaron miles de creadoras antes de unirse al Club.</p>
-      <form class="lead-form" onsubmit="event.preventDefault();alert('Gracias. Te enviamos los detalles por correo.');">
-        <input type="text" placeholder="Tu nombre" required>
-        <input type="email" placeholder="Tu correo electrónico" required>
-        <button type="submit">Apartar mi lugar</button>
-      </form>
+<section>
+  <div class="container authority-grid">
+    <div class="authority-img reveal">
+      <img src="https://assets.cdn.filesafe.space/8uwwaVkrrg7uM7RuXE4l/media/64b71218f601aab8754699af.png" alt="María Valeria Urdaneta">
+    </div>
+    <div class="reveal">
+      <p class="eyebrow">Quiénes te enseñan</p>
+      <h2 class="section-title">María Valeria, Diego y un equipo de creadoras</h2>
+      <p class="section-lead">No es teoría. María tiene 1.5 millones de seguidores en TikTok, 864k en Instagram y 577k en YouTube. Diego construyó el sistema de monetización del Club. Cada semana invitan guest instructors con experiencia comprobable.</p>
+      <div class="authority-stats">
+        <div class="auth-stat"><span class="n">1.5M</span><span class="l">TikTok María</span></div>
+        <div class="auth-stat"><span class="n">864k</span><span class="l">IG María</span></div>
+        <div class="auth-stat"><span class="n">577k</span><span class="l">YouTube María</span></div>
+      </div>
     </div>
   </div>
 </section>
@@ -317,24 +273,6 @@
           <li>Acceso prioritario a colaboraciones</li>
         </ul>
         <a href="#" class="btn">Empezar anual</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section>
-  <div class="container authority-grid">
-    <div class="authority-img reveal">
-      <img src="https://assets.cdn.filesafe.space/8uwwaVkrrg7uM7RuXE4l/media/64b71218f601aab8754699af.png" alt="María Valeria Urdaneta">
-    </div>
-    <div class="reveal">
-      <p class="eyebrow">Quiénes te enseñan</p>
-      <h2 class="section-title">María Valeria, Diego y un equipo de creadoras</h2>
-      <p class="section-lead">No es teoría. María tiene 1.5 millones de seguidores en TikTok, 864k en Instagram y 577k en YouTube. Diego construyó el sistema de monetización del Club. Cada semana invitan guest instructors con experiencia comprobable.</p>
-      <div class="authority-stats">
-        <div class="auth-stat"><span class="n">1.5M</span><span class="l">TikTok María</span></div>
-        <div class="auth-stat"><span class="n">864k</span><span class="l">IG María</span></div>
-        <div class="auth-stat"><span class="n">577k</span><span class="l">YouTube María</span></div>
       </div>
     </div>
   </div>
@@ -376,11 +314,19 @@
   },{threshold:.12, rootMargin:'0px 0px -40px 0px'});
   document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
 
-  // FAQ accordion
+  // FAQ accordion (closed by default)
   document.querySelectorAll('.faq-q').forEach(q=>{
     q.addEventListener('click', ()=>{
       const item = q.parentElement;
       item.classList.toggle('open');
+    });
+  });
+
+  // VSL placeholder click hint
+  document.querySelectorAll('.vsl-frame').forEach(f=>{
+    f.addEventListener('click', ()=>{
+      const cta = document.querySelector('.vsl-cta .btn');
+      if (cta) cta.scrollIntoView({behavior:'smooth', block:'center'});
     });
   });
 </script>

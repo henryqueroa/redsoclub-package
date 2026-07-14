@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RedsoClub: Conviértete en creador a tiempo completo</title>
-<meta name="description" content="Aprende, crece y monetiza tus redes con el plan estructurado que ya transformó a miles de creadoras hispanohablantes.">
+<meta name="description" content="Aprende, crece y monetiza tus redes con el plan estructurado con el que crecen más de 5,000 creadoras hispanohablantes.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -52,11 +52,15 @@
   .trust-row span{display:inline-flex;align-items:center;gap:6px}
   .trust-row span:before{content:"";width:5px;height:5px;border-radius:50%;background:var(--accent);display:inline-block}
 
-  /* VSL placeholder */
+  /* VSL frame (facade: thumbnail + play, click carga el iframe de Vimeo) */
   .vsl-wrap{max-width:760px;margin:0 auto}
   .vsl-frame{position:relative;aspect-ratio:16/9;width:100%;background:linear-gradient(135deg,#0A1929 0%,#0A6E7C 100%);border:1px solid var(--border);border-radius:16px;box-shadow:0 24px 60px rgba(20,184,196,.22);overflow:hidden;cursor:pointer;display:flex;align-items:center;justify-content:center}
-  .vsl-frame:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(20,184,196,.20), transparent 60%)}
-  .vsl-play{position:relative;width:84px;height:84px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.35);transition:transform .2s ease}
+  .vsl-thumb{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+  .vsl-frame:before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 50% 50%, rgba(10,25,41,.30), rgba(10,25,41,.05) 60%);z-index:1}
+  .vsl-frame iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .vsl-frame.playing{cursor:default}
+  .vsl-frame.playing:before,.vsl-frame.playing .vsl-thumb,.vsl-frame.playing .vsl-play{display:none}
+  .vsl-play{position:relative;z-index:2;width:84px;height:84px;border-radius:50%;background:#fff;display:flex;align-items:center;justify-content:center;box-shadow:0 16px 40px rgba(0,0,0,.35);transition:transform .2s ease}
   .vsl-frame:hover .vsl-play{transform:scale(1.06)}
   .vsl-play:after{content:"";display:block;width:0;height:0;border-left:22px solid var(--accent);border-top:14px solid transparent;border-bottom:14px solid transparent;margin-left:6px}
   .vsl-label{margin-top:10px;font-size:13px;color:var(--muted);font-weight:500}
@@ -75,6 +79,8 @@
   .testimonials{background:linear-gradient(180deg,#fff 0%,#F4F7F9 100%)}
   .test-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px;margin-top:48px}
   .test-card{background:#fff;padding:32px;border-radius:16px;border:1px solid var(--border);box-shadow:var(--shadow);position:relative}
+  .test-video{position:relative;aspect-ratio:16/9;border-radius:10px;overflow:hidden;margin-bottom:20px;background:#0A1929}
+  .test-video iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
   .test-quote{font-size:17px;line-height:1.6;color:var(--text);margin-bottom:24px;font-style:italic}
   .test-meta{display:flex;align-items:center;gap:14px;padding-top:20px;border-top:1px solid var(--border)}
   .test-avatar{width:48px;height:48px;border-radius:50%;background:var(--accent);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:700;font-size:18px}
@@ -160,21 +166,23 @@
 
 <header id="top" class="hero">
   <div class="container">
-    <span class="eyebrow-pill"><span class="dot"></span> Próximo live este domingo</span>
+    <span class="eyebrow-pill"><span class="dot"></span> Taller gratuito: miércoles 22 de julio</span>
     <h1>Llevas años creando y aún no logras <span>vivir de tus redes</span>. No es el algoritmo.</h1>
-    <p class="sub">Mira este video corto. Te explicamos qué cambia cuando tienes un plan semanal estructurado, y cómo miles de creadoras hispanohablantes ya viven al 100% de su contenido.</p>
+    <p class="sub">Mira el video y conoce el plan semanal estructurado con el que más de 5,000 creadoras hispanohablantes están creciendo y monetizando su contenido.</p>
     <div class="trust-row">
+      <span>5,000+ creadoras</span>
       <span>0 a 193k IG</span>
       <span>10k a 185k IG</span>
       <span>200+ cursos on-demand</span>
     </div>
 
-    <!-- TODO: reemplazar este div por <iframe> Wistia/YouTube cuando el video esté listo. Conservar aspect-ratio 16/9 y max-width 760px. -->
+    <!-- Video real de RedsoClub (Vimeo 854548133, 1:24). Facade: el iframe se inyecta al hacer click. Cuando exista el VSL de 6-8 min, cambiar data-vimeo. -->
     <div class="vsl-wrap reveal">
-      <div class="vsl-frame" role="button" aria-label="Reproducir video">
+      <div class="vsl-frame" id="vsl" role="button" tabindex="0" data-vimeo="854548133" aria-label="Reproducir el video de RedsoClub (1 minuto 24 segundos)">
+        <img class="vsl-thumb" src="https://i.vimeocdn.com/video/1710574311-a32b400838bd279e08d06c86c5e3fffca6ab6d5df68bf188248f0c50631df127-d_1280.jpg" alt="" fetchpriority="high">
         <div class="vsl-play" aria-hidden="true"></div>
       </div>
-      <p class="vsl-label">Mira este video antes de unirte al club <strong>(4 a 8 min)</strong></p>
+      <p class="vsl-label">Mira esto antes de unirte al club <strong>(1 min 24 seg)</strong></p>
     </div>
 
     <div class="vsl-cta">
@@ -188,9 +196,10 @@
   <div class="container">
     <p class="eyebrow reveal">Resultados reales</p>
     <h2 class="section-title reveal">Creadoras que ya cambiaron su vida</h2>
-    <p class="section-lead reveal">Nombres reales. Números verificables. Cero resultados promedio.</p>
+    <p class="section-lead reveal">Nombres reales. Números verificables. En video y por escrito.</p>
     <div class="test-grid">
       <div class="test-card reveal">
+        <div class="test-video"><iframe src="https://player.vimeo.com/video/854525570?badge=0&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen title="Testimonio de Veronica Dominguez (@Veritomom)"></iframe></div>
         <p class="test-quote">"Empecé con 0 seguidores y logré crecer a 193,000 en Instagram y a 219k en TikTok."</p>
         <span class="test-result">0 a 193k IG</span>
         <div class="test-meta">
@@ -199,6 +208,7 @@
         </div>
       </div>
       <div class="test-card reveal">
+        <div class="test-video"><iframe src="https://player.vimeo.com/video/855224182?badge=0&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen title="Testimonio de Maria Arteaga (@dramelyfit)"></iframe></div>
         <p class="test-quote">"Durante 3 años subí contenido. Empecé en mayo con 10,000 seguidores y ahora tengo una comunidad de más de 185,000."</p>
         <span class="test-result">10k a 185k</span>
         <div class="test-meta">
@@ -207,6 +217,7 @@
         </div>
       </div>
       <div class="test-card reveal">
+        <div class="test-video"><iframe src="https://player.vimeo.com/video/854523976?badge=0&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen; picture-in-picture" allowfullscreen title="Testimonio de Claudia Gonzalez (@englishbyclau)"></iframe></div>
         <p class="test-quote">"Estaba trabajando 11 horas al día. Hoy tengo más de 608,000 seguidores en Instagram y más de 95,000 en TikTok."</p>
         <span class="test-result">11h al día a 608k IG</span>
         <div class="test-meta">
@@ -259,7 +270,7 @@
           <li>Comunidad activa de creadoras</li>
           <li>App móvil 24/7</li>
         </ul>
-        <a href="#" class="btn btn-secondary">Empezar mensual</a>
+        <a href="https://redsoclub.com/" target="_blank" rel="noopener" class="btn btn-secondary">Empezar mensual</a>
       </div>
       <div class="price-card featured reveal">
         <span class="price-badge">Ahorra $59 al año</span>
@@ -272,7 +283,7 @@
           <li>Plantillas de pitch a marcas</li>
           <li>Acceso prioritario a colaboraciones</li>
         </ul>
-        <a href="#" class="btn">Empezar anual</a>
+        <a href="https://redsoclub.com/" target="_blank" rel="noopener" class="btn">Empezar anual</a>
       </div>
     </div>
   </div>
@@ -281,7 +292,7 @@
 <section class="final-cta">
   <div class="container reveal">
     <h2>El plan está. La comunidad está. Falta tu decisión.</h2>
-    <p>Cada semana que pospones, sigues exactamente donde estás. Empieza hoy y este domingo ya estás adentro del live.</p>
+    <p>Cada semana que pospones, sigues exactamente donde estás. Empieza hoy y el domingo ya estás adentro del live.</p>
     <a href="#pricing" class="btn">Quiero entrar al Club</a>
   </div>
 </section>
@@ -322,13 +333,28 @@
     });
   });
 
-  // VSL placeholder click hint
-  document.querySelectorAll('.vsl-frame').forEach(f=>{
-    f.addEventListener('click', ()=>{
-      const cta = document.querySelector('.vsl-cta .btn');
-      if (cta) cta.scrollIntoView({behavior:'smooth', block:'center'});
+  // VSL facade: inyecta el iframe de Vimeo al hacer click (o Enter/Espacio)
+  const vsl = document.getElementById('vsl');
+  function playVsl(){
+    if (!vsl || vsl.classList.contains('playing')) return;
+    const id = vsl.dataset.vimeo;
+    const iframe = document.createElement('iframe');
+    iframe.src = 'https://player.vimeo.com/video/' + id + '?badge=0&autopause=0&autoplay=1&title=0&byline=0&portrait=0';
+    iframe.allow = 'autoplay; fullscreen; picture-in-picture';
+    iframe.setAttribute('allowfullscreen','');
+    iframe.title = 'Video de RedsoClub';
+    vsl.appendChild(iframe);
+    vsl.classList.add('playing');
+    vsl.removeAttribute('role');
+    vsl.removeAttribute('tabindex');
+    vsl.removeAttribute('aria-label');
+  }
+  if (vsl){
+    vsl.addEventListener('click', playVsl);
+    vsl.addEventListener('keydown', (e)=>{
+      if (e.key === 'Enter' || e.key === ' '){ e.preventDefault(); playVsl(); }
     });
-  });
+  }
 </script>
 </body>
 </html>

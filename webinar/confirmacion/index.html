@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cupo asegurado | Taller RedsoClub</title>
+<meta name="description" content="Tu cupo para el taller del 22 de julio está asegurado. Sigue estos pasos para no perdértelo.">
+<style>
+  :root{--teal:#14B8C4;--teal-dark:#0A6E7C;--ink:#0A1929;--muted:#5B6B7B;--border:#E5E9ED;--surface:#F4F7F9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:17px}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px}
+  header.top{padding:18px 0;border-bottom:1px solid var(--border);text-align:center}
+  header.top img{height:34px;width:auto}
+  .hero{text-align:center;padding:30px 0 10px}
+  .check{width:64px;height:64px;border-radius:50%;background:var(--teal);color:#fff;font-size:34px;line-height:64px;margin:0 auto 14px;font-weight:800}
+  h1{font-size:clamp(24px,4.5vw,34px);line-height:1.15;font-weight:800;margin-bottom:8px}
+  .hero p{color:var(--muted);font-size:16px}
+  .step{border:1px solid var(--border);border-radius:12px;padding:22px;margin:16px 0}
+  .step .n{display:inline-block;background:var(--teal);color:#fff;font-size:12px;font-weight:800;border-radius:999px;padding:3px 12px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:10px}
+  .step h2{font-size:19px;margin-bottom:8px}
+  .step p{font-size:15px;color:var(--muted);margin-bottom:10px}
+  .vid{position:relative;aspect-ratio:16/9;background:var(--ink);border-radius:10px;overflow:hidden;margin:10px 0}
+  .vid iframe{position:absolute;inset:0;width:100%;height:100%;border:0}
+  .note-video{font-size:12px;color:var(--muted);font-style:italic}
+  .btn{display:inline-block;background:var(--teal);color:#fff;border:none;border-radius:8px;padding:12px 22px;font-size:14px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;text-decoration:none;font-family:inherit}
+  .btn:hover{background:var(--teal-dark)}
+  .field{margin-bottom:10px}
+  .field label{display:block;font-size:13px;font-weight:700;margin-bottom:4px}
+  .field select,.field input{width:100%;padding:11px;border:1px solid var(--border);border-radius:8px;font-size:15px;font-family:inherit;background:#fff}
+  .mini-success{display:none;font-weight:700;color:var(--teal-dark);font-size:15px}
+  .subject-box{background:var(--surface);border:1px dashed var(--teal-dark);border-radius:8px;padding:10px 14px;font-size:14px;font-weight:700;color:var(--teal-dark);margin:8px 0}
+  .links a{display:block;color:var(--teal-dark);font-weight:700;font-size:15px;margin-bottom:6px;text-decoration:none}
+  .links a:hover{text-decoration:underline}
+  .proof{background:var(--teal-dark);color:#fff;border-radius:12px;padding:22px;text-align:center;margin:20px 0}
+  .proof b{display:block;font-size:18px;margin-bottom:4px}
+  .proof span{font-size:14px;opacity:.85}
+  footer{border-top:1px solid var(--border);padding:22px 0;text-align:center;font-size:13px;color:var(--muted);margin-top:26px}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img src="https://assets.cdn.filesafe.space/8uwwaVkrrg7uM7RuXE4l/media/63d6bc0829f84e408c2f9b80.png" alt="RedsoClub">
+</header>
+
+<div class="wrap">
+
+  <section class="hero">
+    <div class="check">✓</div>
+    <h1>Tu cupo está asegurado</h1>
+    <p>Taller gratuito · Miércoles 22 de julio · 7:00 PM Miami (hora por confirmar) · No queda grabado</p>
+  </section>
+
+  <div class="step">
+    <span class="n">Paso 1</span>
+    <h2>Un mensaje de María Valeria</h2>
+    <div class="vid"><iframe src="https://player.vimeo.com/video/854548133?badge=0&amp;dnt=1&amp;title=0&amp;byline=0&amp;portrait=0" loading="lazy" allow="fullscreen" allowfullscreen title="Video de RedsoClub"></iframe></div>
+    <p class="note-video">Espacio para el video de bienvenida de María (60-120 segundos, por grabar). Mientras tanto se muestra el video de presentación del club.</p>
+  </div>
+
+  <div class="step">
+    <span class="n">Paso 2</span>
+    <h2>Cuéntanos de ti (30 segundos)</h2>
+    <p>Tus respuestas le sirven a María para preparar el Q&A del taller.</p>
+    <form id="survey">
+      <div class="field">
+        <label for="s1">¿Cuál es tu reto #1 ahora mismo?</label>
+        <select id="s1" required>
+          <option value="">Elige una opción</option>
+          <option>No estoy creciendo aunque publico seguido</option>
+          <option>No sé cómo monetizar lo que ya tengo</option>
+          <option>Me cuesta ser constante</option>
+          <option>No sé qué contenido hacer</option>
+        </select>
+      </div>
+      <div class="field">
+        <label for="s2">¿Qué te gustaría lograr en 90 días?</label>
+        <input id="s2" type="text" required placeholder="Escríbelo con tus palabras">
+      </div>
+      <button class="btn" type="submit">Enviar</button>
+      <p class="mini-success" id="survey-ok">¡Gracias! María lo tendrá en cuenta para el Q&A. 🙌</p>
+    </form>
+  </div>
+
+  <div class="step">
+    <span class="n">Paso 3</span>
+    <h2>Agenda el taller en tu calendario</h2>
+    <p>El taller es en vivo y no queda grabado. Este botón lo agrega a tu calendario con recordatorio.</p>
+    <a class="btn" id="ics-btn" href="#" download="taller-redsoclub.ics">Agregar a mi calendario</a>
+  </div>
+
+  <div class="step">
+    <span class="n">Paso 4</span>
+    <h2>Que el link no se te pierda</h2>
+    <p>El día del taller te llega el acceso por correo. Busca este asunto y arrastra el correo a tu bandeja principal:</p>
+    <div class="subject-box">HOY: tu link de acceso al taller</div>
+    <p>Y agrega nuestro correo a tus contactos para que no caiga en promociones.</p>
+  </div>
+
+  <div class="step">
+    <span class="n">Paso 5 (opcional)</span>
+    <h2>¿Te avisamos por SMS?</h2>
+    <p>Un recordatorio el día antes y otro justo cuando empecemos. Nada más.</p>
+    <form id="sms">
+      <div class="field"><label for="tel">Tu teléfono (con código de país)</label><input id="tel" type="tel" placeholder="+1 305 ..."></div>
+      <button class="btn" type="submit">Avisarme por SMS</button>
+      <p class="mini-success" id="sms-ok">Listo, te avisamos. 📲</p>
+    </form>
+  </div>
+
+  <div class="step">
+    <span class="n">Mientras esperas</span>
+    <h2>Contenido para ir calentando</h2>
+    <div class="links">
+      <a href="https://redsoclub.com/webinar-landing" target="_blank" rel="noopener">Mira los testimonios en video de miembros del club →</a>
+      <a href="https://www.instagram.com/redsoclub/" target="_blank" rel="noopener">Síguenos en Instagram (@redsoclub) →</a>
+      <a href="https://redsoclub.com/" target="_blank" rel="noopener">Conoce RedsoClub →</a>
+    </div>
+  </div>
+
+  <div class="proof">
+    <b>Más de 5,000 creadores ya crecieron con RedsoClub</b>
+    <span>El miércoles te mostramos qué tienen en común. En vivo. Sin grabación.</span>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2026 RedsoClub · Aquí trabajamos por los sueños ¡y los alcanzamos!</p>
+</footer>
+
+<script>
+  // Encuesta demo (Elemento 1 Haynes): success state, sin backend
+  document.getElementById("survey").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("survey-ok").style.display = "block";
+    this.querySelector("button").disabled = true;
+  });
+  // SMS opt-in demo (el teléfono se pide AQUÍ, no en el registro)
+  document.getElementById("sms").addEventListener("submit", function(e){
+    e.preventDefault();
+    document.getElementById("sms-ok").style.display = "block";
+    this.querySelector("button").disabled = true;
+  });
+  // .ics inline: 22 jul 2026 19:00 Miami (23:00 UTC). [CONFIRMAR hora]
+  var ics = [
+    "BEGIN:VCALENDAR","VERSION:2.0","PRODID:-//RedsoClub//Taller//ES","BEGIN:VEVENT",
+    "UID:taller-redsoclub-2026-07-22",
+    "DTSTART:20260722T230000Z",
+    "DTEND:20260723T000000Z",
+    "SUMMARY:Taller RedsoClub: Lo que los creadores exitosos tienen en común",
+    "DESCRIPTION:En vivo con María Valeria (@sincerelymvu). No queda grabado. El link llega por correo.",
+    "BEGIN:VALARM","TRIGGER:-PT30M","ACTION:DISPLAY","DESCRIPTION:El taller de RedsoClub empieza en 30 minutos","END:VALARM",
+    "END:VEVENT","END:VCALENDAR"
+  ].join("\r\n");
+  document.getElementById("ics-btn").href = "data:text/calendar;charset=utf-8," + encodeURIComponent(ics);
+</script>
+</body>
+</html>

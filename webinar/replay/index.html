@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Replay del taller | RedsoClub</title>
+<meta name="description" content="El replay del taller de RedsoClub, disponible solo 72 horas. Demo de la Ruta B del paquete de webinar.">
+<style>
+  :root{--teal:#14B8C4;--teal-dark:#0A6E7C;--ink:#0A1929;--muted:#5B6B7B;--border:#E5E9ED;--surface:#F4F7F9}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:system-ui,-apple-system,'Segoe UI',Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6;font-size:17px}
+  .wrap{max-width:680px;margin:0 auto;padding:0 20px}
+  header.top{padding:18px 0;border-bottom:1px solid var(--border);text-align:center}
+  header.top img{height:34px;width:auto}
+  .demo-note{background:#FFF7E0;border:1px solid #E8D48A;border-radius:8px;padding:10px 14px;font-size:13px;color:#7A6215;margin:14px 0 0}
+  .hero{text-align:center;padding:26px 0 10px}
+  .kicker{display:inline-block;font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:#fff;background:var(--teal-dark);border-radius:999px;padding:5px 14px;margin-bottom:14px}
+  h1{font-size:clamp(24px,4.5vw,34px);line-height:1.15;font-weight:800;margin-bottom:8px}
+  .hero p{color:var(--muted);font-size:16px;margin-bottom:12px}
+  .countdown{display:flex;gap:10px;justify-content:center;margin:12px 0}
+  .cd{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:10px 0;width:74px}
+  .cd b{display:block;font-size:26px;line-height:1;color:var(--teal-dark)}
+  .cd span{font-size:10px;text-transform:uppercase;letter-spacing:.6px;color:var(--muted)}
+  .vid{position:relative;aspect-ratio:16/9;background:linear-gradient(135deg,#0A1929,#0A6E7C);border-radius:12px;overflow:hidden;margin:14px 0;display:flex;align-items:center;justify-content:center}
+  .vid .ph{color:#fff;text-align:center;padding:20px}
+  .vid .ph b{display:block;font-size:20px;margin-bottom:6px}
+  .vid .ph span{font-size:14px;opacity:.8}
+  .offer{border:2px solid var(--teal);border-radius:12px;padding:24px;margin:20px 0;text-align:center}
+  .offer h2{font-size:22px;margin-bottom:6px}
+  .offer .price{font-size:38px;font-weight:800;color:var(--teal-dark)}
+  .offer .per{font-size:15px;color:var(--muted);margin-bottom:12px}
+  .btn{display:inline-block;background:var(--teal);color:#fff;border:none;border-radius:8px;padding:14px 28px;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:.5px;cursor:pointer;text-decoration:none;font-family:inherit}
+  .btn:hover{background:var(--teal-dark)}
+  .bonos{margin:20px 0}
+  .bonos h2{font-size:20px;text-align:center;margin-bottom:12px}
+  .bono{display:flex;gap:12px;align-items:baseline;border:1px solid var(--border);border-radius:10px;padding:12px 16px;margin-bottom:8px}
+  .bono b{font-size:15px}
+  .bono span{font-size:13px;color:var(--muted)}
+  .bono .v{margin-left:auto;font-weight:800;color:var(--teal-dark);font-size:14px;white-space:nowrap}
+  .faq{padding:8px 0 26px}
+  .faq h2{font-size:20px;text-align:center;margin:16px 0}
+  .qa{border:1px solid var(--border);border-radius:10px;padding:14px 16px;margin-bottom:10px}
+  .qa b{display:block;font-size:15px;margin-bottom:4px}
+  .qa p{font-size:14px;color:var(--muted)}
+  footer{border-top:1px solid var(--border);padding:22px 0;text-align:center;font-size:13px;color:var(--muted)}
+  @media (max-width:560px){.cd{width:64px}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <img src="https://assets.cdn.filesafe.space/8uwwaVkrrg7uM7RuXE4l/media/63d6bc0829f84e408c2f9b80.png" alt="RedsoClub">
+</header>
+
+<div class="wrap">
+
+  <div class="demo-note">Página demo de la Ruta B (replay con ventana de 72 horas). La recomendación del paquete es la Ruta A: mantener el no-replay y usar un Pop-Up Event. Ver "Show Rate, Replay & KPIs".</div>
+
+  <section class="hero">
+    <span class="kicker">Replay disponible solo 72 horas</span>
+    <h1>Te perdiste el taller en vivo. Esta es tu ventana.</h1>
+    <p>Solo por esta edición, el taller queda disponible 72 horas. Cuando el contador llegue a cero, se va.</p>
+    <div class="countdown" id="countdown">
+      <div class="cd"><b id="cd-h">72</b><span>horas</span></div>
+      <div class="cd"><b id="cd-m">0</b><span>min</span></div>
+      <div class="cd"><b id="cd-s">0</b><span>seg</span></div>
+    </div>
+  </section>
+
+  <div class="vid">
+    <div class="ph"><b>Aquí va el replay del taller</b><span>(embed de Vimeo/YouTube al grabarse la edición del 22 jul)</span></div>
+  </div>
+
+  <div class="offer">
+    <h2>La sorpresa del final, por escrito</h2>
+    <div class="price">$239.52 al año</div>
+    <div class="per">Equivale a $19.96 al mes · Ahorras $59 · O mensual a $24.95</div>
+    <a class="btn" href="https://redsoclub.com/" target="_blank" rel="noopener">Entrar al club</a>
+  </div>
+
+  <div class="bonos">
+    <h2>Los bonos de la ventana (solo plan anual)</h2>
+    <div class="bono"><b>Diagnóstico de Creadora</b><span>tu track exacto según tu etapa</span><span class="v">$47</span></div>
+    <div class="bono"><b>Plantilla de Pitch a Marcas</b><span>el mensaje palabra por palabra</span><span class="v">$67</span></div>
+    <div class="bono"><b>Calendario del Primer Mes</b><span>4 semanas ya planificadas</span><span class="v">$47</span></div>
+    <div class="bono"><b>Workbook del Taller</b><span>todo lo del taller en ejercicios</span><span class="v">$27</span></div>
+    <div class="bono"><b>Sesión 1 a 1 en tu primera semana</b><span>con una Student Success Manager</span><span class="v">$97</span></div>
+  </div>
+
+  <section class="faq">
+    <h2>Lo que seguramente te estás preguntando</h2>
+    <div class="qa"><b>¿Y si no tengo tiempo?</b><p>Claudia trabajaba 11 horas al día como profesora cuando empezó. El plan pide dirección, no más horas. Y el Calendario del Primer Mes te entrega las primeras 4 semanas ya armadas.</p></div>
+    <div class="qa"><b>¿Y si ya intenté otros cursos?</b><p>No te faltó información, te faltó secuencia. El RedsoClub Journey te dice qué hacer el lunes, no solo qué saber.</p></div>
+    <div class="qa"><b>¿Y si tengo pocos seguidores?</b><p>Veronica empezó con 0 y hoy tiene 193,000 en Instagram. Hay miembros con colaboraciones desde 1,000 seguidores.</p></div>
+    <div class="qa"><b>¿Puedo cancelar?</b><p>El plan mensual se cancela en un click desde tu perfil. El anual es la opción con bonos y descuento.</p></div>
+    <div class="qa"><b>¿Por qué solo 72 horas?</b><p>Porque el taller fue en vivo y su valor está en actuar mientras lo tienes fresco. Cuando la ventana cierra, la membresía sigue en la web, pero los bonos se van.</p></div>
+  </section>
+
+</div>
+
+<footer>
+  <p>© 2026 RedsoClub · Aquí trabajamos por los sueños ¡y los alcanzamos!</p>
+</footer>
+
+<script>
+  // Ventana de 72h desde REPLAY_START. Demo: si no hay fecha real, corre desde la visita (persistida en localStorage).
+  var REPLAY_START = null; // p. ej. "2026-07-22T21:00:00-04:00" al publicar el replay real
+  var start;
+  if (REPLAY_START) { start = new Date(REPLAY_START); }
+  else {
+    var saved = localStorage.getItem("rsc-replay-start");
+    if (!saved) { saved = new Date().toISOString(); localStorage.setItem("rsc-replay-start", saved); }
+    start = new Date(saved);
+  }
+  var end = new Date(start.getTime() + 72 * 3600 * 1000);
+  function tick(){
+    var diff = end - new Date();
+    if (diff <= 0) {
+      document.getElementById("cd-h").textContent = 0;
+      document.getElementById("cd-m").textContent = 0;
+      document.getElementById("cd-s").textContent = 0;
+      return;
+    }
+    document.getElementById("cd-h").textContent = Math.floor(diff / 3600000);
+    document.getElementById("cd-m").textContent = Math.floor(diff % 3600000 / 60000);
+    document.getElementById("cd-s").textContent = Math.floor(diff % 60000 / 1000);
+    setTimeout(tick, 1000);
+  }
+  tick();
+</script>
+</body>
+</html>
